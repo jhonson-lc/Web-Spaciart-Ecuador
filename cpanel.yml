@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/muebless/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp contacto.html $DEPLOYPATH
+    - /bin/cp -R muebles $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R favicon $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
