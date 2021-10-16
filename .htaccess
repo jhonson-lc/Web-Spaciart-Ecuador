@@ -6,3 +6,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
 RewriteRule (.*)$ /$1/ [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^muebles\-spaciartecuador\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.muebles\-spaciartecuador\.com$
+RewriteRule ^/?$ "https\:\/\/www\.muebles\-spaciartecuador\.com\/" [R=301,L]

@@ -13,13 +13,15 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     overflow: overlay;
+}
+
+html {
+    display: block;
+    scroll-behavior: smooth;
+    overflow: auto;
 }
 
 
@@ -402,10 +404,6 @@ body {
 
 /* ###########Contenido de Pagina-Principal de Bienvenida###### */
 
-.principal {
-    overflow: hidden;
-}
-
 .home {
     width: 100%;
     height: 100vh;
@@ -578,7 +576,6 @@ body {
     max-width: 120rem;
     background: #fff;
     margin: 5rem auto 0;
-    overflow: hidden;
 }
 
 .project__title {
@@ -595,7 +592,6 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     gap: 5rem;
     justify-items: center;
-    justify-content: center;
     margin: 0 10rem;
 }
 
